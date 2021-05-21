@@ -1,0 +1,137 @@
+.footer{
+padding: 3rem 6rem;
+color: $color-white;
+    
+    &__cont{
+    background-color: $color-secondary-2;
+    padding: 4rem;
+    }
+    
+    &__h2{
+    color: $color-white;
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+        
+        &::after{
+    content: "";
+    width: .5rem;
+    height: .5rem;
+    position: absolute;
+    background-color: $color-primary-1;
+    right: -.8rem;
+    bottom: .5rem;
+        }
+    }
+    
+    &__h4{
+    font-size: 1.2rem;
+    font-weight: 400;
+        
+        &-find{
+        cursor: pointer;
+        }
+    }
+    
+    &__find{
+    margin-top: 2rem;
+    color: $color-teritary-2;
+    font-weight: 400;
+    font-size: 1.1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+    grid-gap: 1rem;
+    }
+    
+    &__menu{
+       margin-top: 3.5rem;
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+       grid-column-gap: 4rem;
+       grid-row-gap: 2rem;
+    }
+    
+    &__h2-menu{
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    }
+    
+    &__h4-menu{
+    cursor: pointer;
+      font-size: 1.1rem;
+    font-weight: 400; 
+    color: $color-teritary-2;
+        
+        &:not(last-of-type){
+        margin-top: 1rem;
+        }
+    }
+    
+    &__services{
+        margin-top: 6rem;
+        padding-bottom: 4rem;
+        border-bottom: .01rem solid rgba($color-teritary-2, 0.5);
+    
+        &-all{
+        text-transform: uppercase;
+        text-decoration: underline;
+        color: $color-white;
+            
+            &:not(last-of-type){
+            margin-right: 1.5rem;
+            }
+        }
+    }
+    
+    &__copyright{
+        color: $color-teritary-2;
+        margin-top: 2rem;
+        
+        &--1{
+         display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        }
+        
+        &--2{
+         display: flex;
+        align-items: center;
+        }
+        
+        &-h4{
+         font-weight: 400;
+        margin-right: auto;
+        }
+        
+        &-link{
+          font-weight: 400; 
+        color: $color-teritary-2;
+            
+            &:not(:last-of-type){
+            margin-right: 1rem;
+            }
+            
+            &-1{
+              color: $color-teritary-2;
+            }
+            
+            &-2{
+        
+                &:not(last-of-type){
+                margin-right: 1rem;
+                }
+            }
+        }
+        
+        &-icon{
+            
+        }
+        
+        &-icon1{
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: $color-white;
+        }
+    }
+
+}

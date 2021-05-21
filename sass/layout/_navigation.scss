@@ -1,0 +1,125 @@
+.nav{
+padding: 3rem 6rem 2rem 6rem;
+font-family: $font-display;
+}
+
+.nav1{ 
+display: flex;
+margin-bottom: 3rem;
+    
+    &__sub{
+//    padding: 0 4rem 0 2rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    }
+    
+    
+    &__dollars{
+    margin-right: auto;
+    align-self: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding-left: 2rem;
+    border-left: .15rem solid $color-teritary-3;
+    }
+}
+
+.nav1contact{
+padding: 0 2rem;
+border-left: .15rem solid $color-teritary-3;
+border-right: .15rem solid $color-teritary-3;
+}
+
+.nav1about{
+padding: 0 2rem;
+    
+&__logo{
+ width: 2rem;
+height: 2rem; 
+margin-right: 1rem;
+    }    
+}
+
+.nav1user{
+border-left: .15rem solid $color-teritary-3;
+padding: 0 2rem;
+}
+
+.nav1checkout{
+padding: 0 2rem;
+}
+
+.nav1logo,
+.nav2logo{
+width: 2rem;
+height: 2rem;
+margin-right: 1rem;
+}
+
+.nav2{
+display: flex;
+align-items: center;
+justify-content: space-between;
+    
+    &__one{
+    
+    }
+    
+    &__hamburger{
+        
+    }
+    
+    &__items{
+    display: flex;
+    }
+    
+    &__link{
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    transition: all .2s;
+    }
+    
+    &__search{
+    display: flex;
+    align-items: center;
+    }
+    
+    &__logo{
+     position: relative;
+        
+     &::after{
+    content: "";
+    width: .5rem;
+    height: .5rem;
+    position: absolute;
+    background-color: $color-primary-1;
+    right: -.8rem;
+    bottom: .5rem;
+        }
+    }
+    
+    &search{
+    
+        &__logo{
+            fill: $color-teritary-2;
+            margin-right: -4rem;
+            z-index: 1;
+        }
+        
+        &__input{
+        border: 1px solid $color-teritary-2;
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        font-family: inherit;
+        position: relative;
+            
+        &:active,
+        &:focus{
+        outline: none;
+            }
+        }
+    }
+}
+
+

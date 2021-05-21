@@ -1,0 +1,55 @@
+.head{
+padding: 3rem 6rem;
+display: flex;
+justify-content: center;
+margin-bottom: 4rem;
+
+
+    &__cover{
+     width: 80%;
+    height: 65vh;
+    background-image: linear-gradient(to left bottom, rgba($color-black, .8), rgba($color-black, 0.3)),url(../../img/macbook.jpg);
+//    background-image: url(../../img/macbook.jpg);
+    background-size: cover;
+    text-align: center;
+    flex: 1;
+    background-position: center;
+    position: relative;
+    }
+    
+    &__text{
+    justify-self: flex-start;
+    color: $color-white;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-45%);
+    padding-left: 5rem;
+    }
+    
+    &__h1{
+    font-size: 4.5rem;
+    font-weight: 500;
+     margin-bottom: 1.2rem;
+    }
+    
+    &__h2{
+      font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    }
+    
+     &__h3{
+    color: $color-teritary-3;
+    margin-bottom: 1.5rem;
+    }
+    
+    &__purchase{
+    display: flex;
+    align-items: center;
+    }
+    
+    &__price{
+    font-size: 2.8rem;
+    }
+}

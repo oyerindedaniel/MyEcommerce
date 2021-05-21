@@ -1,0 +1,51 @@
+.button{
+border-radius: 0;
+text-transform: uppercase;
+    font-size: 1.1rem;
+    font-family: $font-display;
+
+    &--transp{
+    padding: 1.5rem 4rem;
+    background-color: transparent;
+    font-weight: 500;
+    border: 1.2px solid $color-white;
+    color: $color-white;
+    margin-left: 8rem;   
+        
+        &-1{
+         border: 1.2px solid $color-teritary-2;
+        color: $color-black;
+         padding: 1.5rem 5rem;
+        margin-right: 2rem;
+        margin-left: 0;
+            
+            &-sub{
+            font-size: 1.2rem;
+            text-decoration: underline;
+            }
+        }
+        
+    }
+    
+       &--red{
+        padding: 1.5rem 5rem;
+        background-color:rgba($color-primary-1, .9);
+        color: $color-white;
+        border: none;
+        font-weight: 500;
+           
+           &--1{
+        top: 3rem;
+        right: 3rem;
+        position: absolute;
+           }
+    }
+    
+}
+
+.button-div{
+margin-top: 10rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
