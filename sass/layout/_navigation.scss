@@ -1,19 +1,30 @@
 .nav{
 padding: 3rem 6rem 2rem 6rem;
 font-family: $font-display;
+    
+@media only screen and (max-width: $bp-large){
+    padding: 3rem 4rem 2rem 4rem;
+    }
+    
+ @media only screen and (max-width: $bp-small-4){
+        padding: 3rem 2rem 2rem 2rem;
+    }
 }
 
 .nav1{ 
 display: flex;
 margin-bottom: 3rem;
     
+       @media only screen and (max-width: $bp-smallest){
+     justify-content: space-between;
+    } 
+    
     &__sub{
-//    padding: 0 4rem 0 2rem;
     display: flex;
     align-items: center;
     cursor: pointer;
+    position: relative;
     }
-    
     
     &__dollars{
     margin-right: auto;
@@ -22,6 +33,34 @@ margin-bottom: 3rem;
     font-weight: 400;
     padding-left: 2rem;
     border-left: .15rem solid $color-teritary-3;
+        
+           @media only screen and (max-width: $bp-smallest){
+     margin-right: 0;
+    } 
+        
+     @media only screen and (max-width: $bp-smallest-1){
+     padding-left: 0;
+     border: none;
+    } 
+    }
+    
+    &__h3{
+    @media only screen and (max-width: $bp-medium-6){
+      display: none;
+    }
+        
+        &-1{
+         @media only screen and (max-width: $bp-smallest){
+      display: none;
+    } 
+        }
+    }
+}
+
+.nav1h4edit{
+    
+    @media only screen and (max-width: $bp-medium-5){
+    display: none;
     }
 }
 
@@ -29,6 +68,44 @@ margin-bottom: 3rem;
 padding: 0 2rem;
 border-left: .15rem solid $color-teritary-3;
 border-right: .15rem solid $color-teritary-3;
+    
+     @media only screen and (max-width: $bp-smallest-1){
+    border: none;
+    } 
+}
+
+.nav1__spanname{
+position: absolute;
+font-size: 1.5rem;
+bottom: -2rem;
+color: transparent;
+    
+ @media only screen and (max-width: $bp-medium-5){
+    color: $color-black;
+    } 
+}
+
+.nav1__spanusa{
+position: absolute;
+font-size: 1.5rem;
+bottom: -2rem;
+color: transparent;
+    
+ @media only screen and (max-width: $bp-medium-6){
+    color: $color-black;
+    } 
+}
+
+.nav1__spanno{
+position: absolute;
+font-size: 1.5rem;
+bottom: -2rem;
+left: -2rem;
+color: transparent;
+    
+ @media only screen and (max-width: $bp-medium-6){
+    color: $color-black;
+    } 
 }
 
 .nav1about{
@@ -44,6 +121,10 @@ margin-right: 1rem;
 .nav1user{
 border-left: .15rem solid $color-teritary-3;
 padding: 0 2rem;
+    
+     @media only screen and (max-width: $bp-smallest-1){
+     border: none;
+    } 
 }
 
 .nav1checkout{
@@ -62,16 +143,78 @@ display: flex;
 align-items: center;
 justify-content: space-between;
     
-    &__one{
+     @media only screen and (max-width: $bp-small-3){
+             flex-wrap: wrap;
+             justify-content: space-around;
+            }
     
+    &-edit{
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 0 6rem;
+        
+    @media only screen and (min-width: $bp-largest){
+    display: none; 
+    }
+    }
+    
+    
+    &__one{
+    display: flex;
+    align-items: center;
+        
+       @media only screen and (max-width: $bp-small-3){
+             position: relative;
+            }
     }
     
     &__hamburger{
+    width: 2rem;
+    height: .25rem;
+    background-color: $color-teritary-2;
+    display: inline-block;
+    margin-left: 5rem;
+    position: relative;
         
+        &::before,
+        &::after{
+         content: "";
+         width: 100%;
+         height: 100%;
+         position: absolute;
+         display: inline-block;
+        background-color: $color-teritary-2;
+        }
+        
+        &::before{
+         top: -.7rem;
+        left: 0;
+        }
+        
+        &::after{
+         bottom: -.7rem;
+        left: 0;
+        }
     }
     
     &__items{
     display: flex;
+    margin-left: -5rem;
+        
+    @media only screen and (max-width: $bp-largest){
+    display: none; 
+    }
+    
+        
+        &-edit{
+        display: flex;
+        margin: 0 auto;
+        transform: translateX(-3rem);
+            
+         @media only screen and (max-width: $bp-medium-2){
+             display: none;
+            }
+        }
     }
     
     &__link{
@@ -83,6 +226,11 @@ justify-content: space-between;
     &__search{
     display: flex;
     align-items: center;
+        
+      @media only screen and (max-width: $bp-small-3){
+             width:  100%;
+            margin-top: 2rem;
+            }
     }
     
     &__logo{
@@ -94,7 +242,7 @@ justify-content: space-between;
     height: .5rem;
     position: absolute;
     background-color: $color-primary-1;
-    right: -.8rem;
+    right: -1rem;
     bottom: .5rem;
         }
     }
@@ -105,6 +253,18 @@ justify-content: space-between;
             fill: $color-teritary-2;
             margin-right: -4rem;
             z-index: 1;
+            
+             @media only screen and (max-width: $bp-small-3){
+             margin-right: 0;
+             position: relative;
+             left: 2rem;
+            }
+        }
+        
+        &__form{
+        @media only screen and (max-width: $bp-small-3){
+            width: 100%;
+            }
         }
         
         &__input{
@@ -118,8 +278,16 @@ justify-content: space-between;
         &:focus{
         outline: none;
             }
+            
+        @media only screen and (max-width: $bp-small-3){
+             width: 100%;
+             margin-left: -2rem;
+            }
         }
     }
 }
 
+.nav2search__input:active ~ .nav2search__logo{
+display: none;
+}
 

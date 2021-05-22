@@ -2,6 +2,14 @@
 padding: 3rem 6rem;
 color: $color-white;
     
+  @media only screen and (max-width: $bp-large){
+   padding: 3rem 4rem;
+    }
+    
+      @media only screen and (max-width: $bp-small-4){
+       padding: 3rem 2rem;
+    }
+    
     &__cont{
     background-color: $color-secondary-2;
     padding: 4rem;
@@ -30,6 +38,10 @@ color: $color-white;
         
         &-find{
         cursor: pointer;
+            
+              &:hover{
+        color: $color-white;
+        }
         }
     }
     
@@ -61,9 +73,15 @@ color: $color-white;
       font-size: 1.1rem;
     font-weight: 400; 
     color: $color-teritary-2;
+    transition: all .2s;
         
         &:not(last-of-type){
         margin-top: 1rem;
+        } 
+        
+        &:hover{
+        text-decoration: underline;
+        color: $color-white;
         }
     }
     
@@ -80,6 +98,11 @@ color: $color-white;
             &:not(last-of-type){
             margin-right: 1.5rem;
             }
+            
+        @media only screen and (max-width: $bp-medium-3){
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
         }
     }
     
@@ -91,16 +114,41 @@ color: $color-white;
          display: flex;
         align-items: center;
         margin-bottom: 1rem;
+            
+         @media only screen and (max-width: $bp-medium-3){
+             flex-direction: column;
+            }
         }
         
         &--2{
          display: flex;
         align-items: center;
+            
+         @media only screen and (max-width: $bp-small-2){
+            flex-direction: column;
+             align-items: flex-start;
+            }
+        }
+        
+        &-linkcont{
+            
+        @media only screen and (max-width: $bp-medium-3){
+            margin-top: 1rem;
+             align-self: flex-start;
+            }
         }
         
         &-h4{
          font-weight: 400;
         margin-right: auto;
+            
+            &edit{
+            margin-bottom: .5rem;
+                
+             @media only screen and (max-width: $bp-small-2){
+            margin-top: 1rem;
+            }
+            }
         }
         
         &-link{
@@ -134,4 +182,13 @@ color: $color-white;
         }
     }
 
+}
+
+.owner{
+    transition: all .2s;
+
+    &:hover{
+    text-decoration: underline;
+    color: $color-white;
+    }
 }

@@ -3,6 +3,7 @@ border-radius: 0;
 text-transform: uppercase;
     font-size: 1.1rem;
     font-family: $font-display;
+    cursor: pointer;
 
     &--transp{
     padding: 1.5rem 4rem;
@@ -10,7 +11,12 @@ text-transform: uppercase;
     font-weight: 500;
     border: 1.2px solid $color-white;
     color: $color-white;
-    margin-left: 8rem;   
+    margin-left: 8rem;
+        
+     @media only screen and (max-width: $bp-small-4){
+        margin-top: 1.5rem;
+        margin-left: 0;
+        }
         
         &-1{
          border: 1.2px solid $color-teritary-2;
@@ -19,10 +25,20 @@ text-transform: uppercase;
         margin-right: 2rem;
         margin-left: 0;
             
+         @media only screen and (max-width: $bp-small-4){
+        margin-bottom: 1rem;
+        }
+            
             &-sub{
             font-size: 1.2rem;
             text-decoration: underline;
             }
+        }
+        
+        &-edit{
+        @media only screen and (max-width: $bp-medium-6){
+        padding: 1.5rem 3rem;
+        }
         }
         
     }
@@ -48,4 +64,8 @@ margin-top: 10rem;
 display: flex;
 justify-content: center;
 align-items: center;
+    
+ @media only screen and (max-width: $bp-small-4){
+        flex-direction: column;
+        }
 }

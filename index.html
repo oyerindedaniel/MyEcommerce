@@ -20,24 +20,25 @@
         <svg class="nav1logo nav1contact__logo">
         <use xlink:href="img/sprite.svg#icon-message-circle"></use>
       </svg>
-        <h3>02 98344577</h3>
+        <h3 class="nav1__h3">02 98344577</h3>
+        <span class="nav1__spanno">02 98344577</span>
         </div>
         <div class="nav1__sub nav1about">
        <img src="img/united-states-of-america.svg" class="nav1about__logo" alt="United state logo">
-        <h3>English</h3>
+        <h3 class="nav1__h3">English</h3>
+        <span class="nav1__spanusa">English</span>
         </div>
         <h3 class="nav1__dollars">&#36;</h3>
         <div class=" nav1__sub nav1user">
-           <svg class="nav1logo nav1user__logo">
-        <use xlink:href="img/sprite.svg#icon-user"></use>
-      </svg>
-        <h3>Account</h3>
+          <img src="img/myavatar.jpg" alt="" class="nav1logo nav1user__logo">
+        <h3 class="nav1h4edit">Daniel</h3>
+        <span class="nav1__spanname">Daniel</span>
         </div>
         <div class="nav1__sub nav1checkout">
             <svg class="nav1logo nav1checkout__logo">
         <use xlink:href="img/sprite.svg#icon-shopping-cart"></use>
       </svg>
-       <h3>$125.00</h3>
+       <h3 class="nav1__h3-1">$125.00</h3>
         </div>
         </div>
         <div class="nav2">
@@ -58,11 +59,24 @@
          <svg class="nav2logo nav2search__logo">
         <use xlink:href="img/sprite.svg#icon-search"></use>
       </svg>
-         <form action="#">
-         <input type="text" class="nav2search__input" placeholder="search">
+         <form class="nav2search__form" action="#">
+         <input id="text" type="text" name="form" class="nav2search__input" placeholder="search">
          </form>
         </div>
         </div>
+<!--         NAV EDIT-->
+          <div class=" nav2 nav2-edit">
+            <ul class="nav2__items-edit">
+            <li class="nav2__item"><a class="nav2__link"  href="#">PC Parts</a></li>
+            <li class="nav2__item"><a class="nav2__link" href="#">Systems</a></li>
+            <li class="nav2__item"><a class="nav2__link" href="#">Audio Visual</a></li>
+            <li class="nav2__item"><a class="nav2__link" href="#">Peripherals</a></li>
+            <li class="nav2__item"><a class="nav2__link" href="#">Hardware</a></li>
+            <li class="nav2__item"><a class="nav2__link" href="#">Accessories</a></li>
+            <li class="nav2__item"><a class="nav2__link" href="#">Corporate</a></li>
+            </ul>
+        </div>
+<!--        NAV EDIT STOP-->
        </nav>
        <div class="alert">
          <h4 class="alert__text">
@@ -195,6 +209,9 @@
            <button class="button button--red button--red--1">
                SEE DETAILS
            </button>
+           <svg class="nav2logo featured-product__icon">
+        <use xlink:href="img/sprite.svg#icon-chevron-left"></use>
+      </svg>
             <p class="featured-product__p--1">1 of 4</p>
         </figure>
         <figure class="featured-product__figure featured-product__figure--3">
@@ -268,7 +285,7 @@
             <form class="details__forms-1" action="">
                  <input type="text" class="details__formbth details__form--1" placeholder="Enter email address" required>
             </form>
-             <button class="button button--transp button--transp-1 button--transp-1-sub">
+             <button class="button button--transp button--transp-1 button--transp-1-sub button--transp-1 button--transp-edit">
                 Sign up
              </button>
            </div>
@@ -288,7 +305,7 @@
            </div>
            </span>
             </div>
-              <div class="details__lists">
+              <div class="details__lists details__lists-edit2">
                   <svg class="details__img">
         <use xlink:href="img/sprite.svg#icon-truck"></use>
       </svg>
@@ -299,7 +316,7 @@
            </div>
            </span>
             </div>
-             <div class="details__lists">
+             <div class="details__lists details__lists-edit">
                   <svg class="details__img">
         <use xlink:href="img/sprite.svg#icon-undo"></use>
       </svg>
@@ -310,7 +327,7 @@
            </div>
            </span>
             </div>
-         <div class="details__lists">
+         <div class="details__lists details__lists-edit">
         <svg class="details__img">
         <use xlink:href="img/sprite.svg#icon-lock_outline"></use>
       </svg>
@@ -437,7 +454,7 @@
        <h4 class="footer__copyright-h4">
            Copyright &copy; 1998-2021. Scorptec Computers. ABN #79775620896. All Right Reserved. 
        </h4>
-       <div>
+       <div class="footer__copyright-linkcont">
        <a href="" class="footer__copyright-link">Terms &amp; Conditions</a>
        <a href="" class="footer__copyright-link">Privacy Statement</a>
        <a href="" class="footer__copyright-link">Sitemap</a>
@@ -446,9 +463,14 @@
        <div class="footer__copyright--2">
        <h4 class="footer__copyright-h4">
         Design from Dribble. <br>
-         Developed by Oyerinde Daniel. Designed by <a href="https://dribbble.com/shots/15612929-Computer-Store-Redesign-pt-1/attachments/7404062?mode=media" class="footer__copyright-link-1" target="_blank"> Monty Hayton.</a>
+         Developed by Oyerinde Daniel. Designed by <a href="https://dribbble.com/shots/15612929-Computer-Store-Redesign-pt-1/attachments/7404062?mode=media" class="footer__copyright-link-1" target="_blank"> <span class="owner">Monty Hayton</span>.</a>
          </h4>
          <div class="footer__copyright-icon">
+         <div class="footer__deve">
+           <h4 class="footer__copyright-h4 footer__copyright-h4edit">
+            Developed by
+           </h4> 
+         </div>
          <a href="mailto:oyerinde.daniel@yahoo.com" class="footer__copyright-link-2" target="_blank">
           <svg class="footer__copyright-icon1">
         <use xlink:href="img/sprite.svg#icon-envelope"></use>
@@ -469,5 +491,7 @@
        </div>
         </div>
        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script src="indexes.js"></script>
     </body>
 </html>
