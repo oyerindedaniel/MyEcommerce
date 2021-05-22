@@ -15,14 +15,12 @@ margin-bottom: 4rem;
     &__cover{
      width: 80%;
     height: 65vh;
-//    background-image: linear-gradient(to left bottom, rgba($color-black, .8), rgba($color-black, 0.3)),url(../img/macbook.jpg);
-//    background-image: url(../../img/macbook.jpg);
+    background-image: linear-gradient(to left bottom, rgba($color-black, .8), rgba($color-black, 0.3)),url(../img/macbook.jpg);
     background-size: cover;
     text-align: center;
     flex: 1;
     background-position: center;
     position: relative;
-    background-image: url(../../img/macbook.jpg);
     }
     
     &__text{
